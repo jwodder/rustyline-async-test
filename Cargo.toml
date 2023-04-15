@@ -2,6 +2,11 @@
 name = "rustyline-async-test"
 version = "0.1.0"
 edition = "2021"
+description = "MVCE test for rustyline-async on Windows"
+authors = ["John Thorvald Wodder II <rustyline-async-test@varonathe.org>"]
+repository = "https://github.com/jwodder/rustyline-async-test"
+license = "MIT"
+exclude = ["/.*"]
 
 [dependencies]
 rustyline-async = "0.3.1"
