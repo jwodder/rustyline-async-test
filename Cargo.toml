@@ -11,3 +11,7 @@ exclude = ["/.*"]
 [dependencies]
 rustyline-async = "0.3.1"
 tokio = { version = "1.27.0", features = ["full"] }
+
+[profile.release]
+lto = true
+strip = true
