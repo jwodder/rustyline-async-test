@@ -31,3 +31,14 @@ with:
     cd rustyline-async-test
     cargo build  # or `cargo build --release` to enable optimizations
     # You can now run the binary with `cargo run` while in this repository.
+
+
+Expected Behavior
+=================
+
+When `rustyline-async-test` is working properly, it will print out a `prompt>`
+prompt.  Entering a line of text at this prompt will cause the program to
+repeat it back to you and issue a new prompt.  For each second that passes
+without pressing "Enter", a line reading "`Message received!`" will be output
+above the prompt.  You can press the Up and Down arrow keys to go back through
+previously-entered lines.  Entering "`quit`" quits the program.
