@@ -42,3 +42,5 @@ repeat it back to you and issue a new prompt.  For each second that passes
 without pressing "Enter", a line reading "`Message received!`" will be output
 above the prompt.  You can press the Up and Down arrow keys to go back through
 previously-entered lines.  Entering "`quit`" quits the program.
+
+![rustyline-async-test in action](recording.gif)
