@@ -94,7 +94,7 @@ jobs:
         run: cross build --release --target ${{ matrix.target }} --verbose
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: rustyline-async-test-${{ matrix.os-name }}-${{ matrix.architecture }}
           path: target/${{ matrix.target }}/release/rustyline-async-test${{ matrix.suffix }}
