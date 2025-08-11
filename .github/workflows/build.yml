@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Check out repository
         if: github.event_name == 'push' && github.ref_type == 'tag'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Create GitHub release
         if: github.event_name == 'push' && github.ref_type == 'tag'
@@ -69,7 +69,7 @@ jobs:
             use-cross: false
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@master
